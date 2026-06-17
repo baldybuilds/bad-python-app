@@ -15,5 +15,7 @@ ENV FLASK_ENV development
 
 EXPOSE 5000
 
+USER jamie
+
 # CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
 CMD [ "sh", "run.prod.sh"]
